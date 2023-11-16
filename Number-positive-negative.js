@@ -35,4 +35,4 @@ function checkNumber3(number2){
         return 'Given number is zero'
     }
 }
-    console.log(checkNumber2(0))
+    console.log(checkNumber2(00))
