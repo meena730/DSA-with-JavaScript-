@@ -25,4 +25,14 @@ function checkNumber2(number1){
 }
 console.log(checkNumber2(-110));
 
-    
+function checkNumber3(number2){
+    if(number2>0){
+        return 'Given number is positive'
+    } else if(number2<0){
+        return 'Given number is negative'
+    }
+    else{
+        return 'Given number is zero'
+    }
+}
+    console.log(checkNumber2(0))
