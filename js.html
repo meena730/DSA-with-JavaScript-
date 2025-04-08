@@ -30,7 +30,10 @@
   <h1>JavaScript Greeting App</h1>
   <button id="greetBtn">Say Hello</button>
   <p id="greeting"></p>
-
+<div style="display: flex; flex-wrap: wrap;">
+  <div style="flex: 1 1 50%;">Left</div>
+  <div style="flex: 1 1 50%;">Right</div>
+</div>
   <script>
     document.getElementById("greetBtn").addEventListener("click", function() {
       const greeting = "Hello Meena, you're doing amazing! 🌟";
