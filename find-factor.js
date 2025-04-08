@@ -24,4 +24,4 @@ function findFactors(number) {
   
   // Output the result
   console.log(`Factors of ${numberToFindFactors}: ${resultFactors.join(', ')}`);
-  
+  var a  = a
