@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #f0f0f0;
+    }
+    #greetBtn {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    #greeting {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Greeting App</h1>
+  <button id="greetBtn">Say Hello</button>
+  <p id="greeting"></p>
+
+  <script>
+    document.getElementById("greetBtn").addEventListener("click", function() {
+      const greeting = "Hello Meena, you're doing amazing! 🌟";
+      document.getElementById("greeting").textContent = greeting;
+    });
+  </script>
+</body>
+</html>
