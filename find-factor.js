@@ -52,3 +52,29 @@ class ListNode {
     this.next = null;
   }
 }
+
+// calculator.js
+
+// Calculator Logic
+function calculate(a, b, operation) {
+  switch (operation) {
+    case 'add':
+      return `${a} + ${b} = ${a + b}`;
+    case 'subtract':
+      return `${a} - ${b} = ${a - b}`;
+    case 'multiply':
+      return `${a} * ${b} = ${a * b}`;
+    case 'divide':
+      if (b === 0) return "Error: Division by zero is not allowed.";
+      return `${a} / ${b} = ${a / b}`;
+    default:
+      return "Invalid operation. Please use add, subtract, multiply, or divide.";
+  }
+}
+
+// Example usage:
+console.log(calculate(10, 5, 'add'));
+console.log(calculate(10, 5, 'subtract'));
+console.log(calculate(10, 5, 'multiply'));
+console.log(calculate(10, 0, 'divide'));
+console.log(calculate(10, 5, 'power')); // invalid operation
